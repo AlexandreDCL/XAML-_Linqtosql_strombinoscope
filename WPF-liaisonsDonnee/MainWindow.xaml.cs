@@ -20,9 +20,13 @@ namespace WPF_liaisonsDonnee
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<GetAllUsersResult> UserList { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            DataClasses1DataContext MyContext = new DataClasses1DataContext();
+            UserList = MyContext.GetAllUsers().ToList();
+            test.Content = UserList[0].Nom;
         }
     }
 }

@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:WPF_liaisonsDonnee"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <DockPanel >
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Width="250">
+            <Label Name="test" > </Label>
+        </StackPanel>
         
-    </Grid>
+    </DockPanel>
 </Window>
